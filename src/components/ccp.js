@@ -195,6 +195,15 @@ const Ccp = () => {
             "ccp-container",
             connectUrl + "/connect/ccp-v2/", { 
                 ccpParams: { 
+                    loginPopup: true,
+                    loginUrl: "https://expo.awsapps.com/start/#/saml/default/mydemo17s-Amazon-Connect/ins-fb660656d2bce927",
+                    loginOptions: {                 // optional, if provided opens login in new window
+                        autoClose: true,              // optional, defaults to `false`
+                        height: 600,                  // optional, defaults to 578
+                        width: 400,                   // optional, defaults to 433
+                        top: 0,                       // optional, defaults to 0
+                        left: 0                       // optional, defaults to 0
+                      },
                     region: process.env.REACT_APP_CONNECT_REGION,
                     pageOptions: {                  // optional
                         enableAudioDeviceSettings: true, // optional, defaults to 'false'
